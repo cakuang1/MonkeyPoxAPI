@@ -44,10 +44,6 @@ def notnewmonkeypox():
     return totalconfirmedcases() - newmonkeypox()
 
 
-
-
-
-
 def countrynumbers():
     #returns the total number of countries tracked
     return df.shape[0]
@@ -55,9 +51,7 @@ def countrynumbers():
 def countrynumberswithout():
     #returns the number of countries who have not historically reported monkeypox
     has = df[df['Category'] == 'Has not historically reported monkeypox']
-    return has
-
-
+    return has.shape[0]
 
 def countrynumberswith():
     return countrynumberswith() - countrynumberswithout()
