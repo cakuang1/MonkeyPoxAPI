@@ -1,6 +1,6 @@
 
-import json
 from optparse import Values
+from turtle import shape
 import pandas as pd
 import requests
 import io
@@ -10,6 +10,14 @@ ioobjectstring = io.StringIO(csvcountry.content.decode('utf-8'))
 df = pd.read_csv(ioobjectstring)
 
 
+# IO streams
+
+
+
+
+def csvio():
+    # returns the text I/O object for csv
+    return ioobjectstring
 
 
 def numcases(country):
@@ -40,22 +48,22 @@ def notnewmonkeypox():
 
 
 
+def countrynumbers():
+    #returns the total number of countries tracked
+    return df.shape[0]
+
+def countrynumberswithout():
+    #returns the number of countries who have not historically reported monkeypox
+    has = df[df['Category'] == 'Has not historically reported monkeypox']
+    return has
 
 
 
-print(newmonkeypox())
+def countrynumberswith():
+    return countrynumberswith() - countrynumberswithout()
 
 
 
-
-
-
-
-
-
-
-
-numcases("Uruguay")
 
 
 
