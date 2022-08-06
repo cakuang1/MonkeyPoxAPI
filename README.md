@@ -1,34 +1,24 @@
-# Foobar
+# MonkeyPoxAPI
 
-Foobar is a Python library for dealing with word pluralization.
+MonkeyPoxAPI a simple package that allows users to develop applications using data scraped from CDC's official MonkeyPox tracker
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
 ```bash
-pip install foobar
+pip install monkeypoxapi
 ```
 
 ## Usage
 
-```python
-import foobar
 
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+
+## How this works
+
+Data is being webscraped from CDC's official website on monkeypox data.
+-HTTP GET requests to endpoints
+-Requests are parsed into respective objects to allow for indexing
+-JSON and CSV files are returned as io objects
