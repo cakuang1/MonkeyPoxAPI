@@ -1,8 +1,9 @@
 
 import json
-import csv
+
 import requests
 import pprint
+import io
 
 
 res = requests.get('https://www.cdc.gov/poxvirus/monkeypox/response/modules/MX-response-case-count-US.json?v=2022-08-01T05%3A00%3A00.000Z')
@@ -34,8 +35,14 @@ def date():
     return (parsed['general']['subtext']).removesuffix('<br>')
 
 
+def csvfile():
+    re
+    #returns the csvfile for cases in each state
+    return
 
-def
+
+
+
 
 
 
