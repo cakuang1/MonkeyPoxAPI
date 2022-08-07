@@ -9,8 +9,25 @@ pip install monkeypoxapi
 ```
 
 ## Usage
+```python
+from monkeypoxapi import uscases
+
+# returns the number of Monkey Pox cases in California
+uscases.numcases("California")
+
+# returns the total number of cases in the US
+uscases.total()
+
+# returns the date this data was recorded
+uscases.date()
 
 
+# returns 
+foobar.singularize('phenomena')
+```
+
+
+## 
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
