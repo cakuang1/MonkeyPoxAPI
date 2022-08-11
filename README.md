@@ -9,6 +9,7 @@ pip install monkeypoxapi
 ```
 
 ## Usage
+### Number of Cases in the United States
 ```python
 from monkeypoxapi import uscases
 
@@ -20,6 +21,22 @@ uscases.total()
 
 # returns the date this data was recorded
 uscases.date()
+
+```
+
+### Number of Cases in Countries
+
+```python
+from monkeypoxapi import worldcases
+
+# returns the number of Monkey Pox cases in California
+worldcases.numcases("China")
+
+# returns the total number of cases in all countries that are tracked by CDC
+worldcases.total()
+
+# returns the date this data was recorded
+worldcases.date()
 
 ```
 
